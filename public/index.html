@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizGet AI Weekly</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>BizGet AI Weekly Setup</h1>
+        <p>Create your business profile to receive a personalized weekly AI newsletter by email.</p>
+
+        <form id="profile-form">
+          <label>
+            Your Name
+            <input name="ownerName" required />
+          </label>
+
+          <label>
+            Business Name
+            <input name="businessName" required />
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Purpose of the Business
+            <textarea name="purpose" rows="3" required></textarea>
+          </label>
+
+          <label>
+            Number of People Running the Business
+            <input type="number" min="1" name="teamSize" required />
+          </label>
+
+          <label>
+            Business Locations (one per line)
+            <textarea name="locations" rows="3" required></textarea>
+          </label>
+
+          <label>
+            Primary Long-Term Goal
+            <textarea name="longTermGoal" rows="2" required></textarea>
+          </label>
+
+          <label>
+            Short-Term Goal 1
+            <input name="shortTermGoal1" required />
+          </label>
+
+          <label>
+            Short-Term Goal 2
+            <input name="shortTermGoal2" required />
+          </label>
+
+          <label>
+            Short-Term Goal 3
+            <input name="shortTermGoal3" required />
+          </label>
+
+          <button type="submit" id="submit-btn">Save Profile + Send First Newsletter</button>
+        </form>
+
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="card" id="profiles-section">
+        <div class="profiles-header">
+          <h2>Registered Profiles</h2>
+          <button id="refresh-btn" type="button">Refresh</button>
+          <button id="run-now-btn" type="button">Run Weekly Job Now</button>
+        </div>
+        <div id="profiles-list"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "bizget-usecase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.0",
+    "@azure/keyvault-secrets": "^4.10.0",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.0"
+  }
+}

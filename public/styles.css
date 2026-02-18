@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 16px 24px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 14px;
+}
+
+button:hover {
+  background: #1f2937;
+}
+
+.status {
+  min-height: 24px;
+  font-weight: 600;
+}
+
+.profiles-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.profiles-header h2 {
+  margin-right: auto;
+}
+
+.profile-row {
+  border-top: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
